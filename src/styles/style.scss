@@ -1,0 +1,48 @@
+@import "reset";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "content";
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 12px;
+    margin: auto;
+}
+
+.hidden-input {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+.form-control {
+    max-width: 100%;
+    margin-top: 40px;
+}
+.form-wrapper-layout {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-bottom: 10px;
+    gap: 10px;
+}
+.quill {
+    position: relative;
+    .ql-toolbar {
+        top: 0;
+        position: sticky;
+        background-color: #fff;
+        z-index: 10;
+    }
+}
+.grid-layout {
+    margin-top: 30px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+}
